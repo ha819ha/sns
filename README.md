@@ -1,24 +1,11 @@
-# README
+# SNS 프로젝트
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+rails server => run a server
 
-Things you may want to cover:
+read this:
 
-* Ruby version
+* rails server => run a server
 
-* System dependencies
+* localhost:3000 => homepage
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* current features : login, logout, register, post, listing post
