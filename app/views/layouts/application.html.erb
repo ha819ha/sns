@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sns</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <nav>
+    <table>
+          <span class="Manu">
+            <a href="/"><img src="/assets/Logo.png" alt="LOGO"></a>
+          </span>
+      <% if signed_in? %>
+        <span class="EnterLogin"><a href="/logout" data-method="delete"><img src="/assets/logout.png" alt="Profile.png"></a></span>
+      <% else %>
+        <span class="EnterLogin"><a href="/login"><img src="/assets/login.png" alt="Profile.png"></a></span>
+      <% end %>
+      <div class="MAIN_NAME"><a href="/" class="NAME">SNS</a></div>
+    </table>
+  </nav>
+    <%= yield %>
+  </body>
+</html>

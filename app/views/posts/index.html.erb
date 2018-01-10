@@ -1,0 +1,8 @@
+<ul class="post_list">
+  <a href="/posts/new" class="post_button" style="text-decoration: none;">글 쓰기</a>
+  <% @posts.reverse_each do |post| %>
+    <li class="post"><h4 class="username"><%=post.user%></h4>
+      <p class="post_content"><%=post.content%></p>
+    </li>
+  <% end %>
+</ul>

@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="All">
+    login
+  </div>
+  <div class="contentbox">
+    <%= form_tag("/login", method: "post", class: "login_form") do %>
+      <input type="text" name="name" placeholder="ID" required>
+      <input type="text" name="password" placeholder="Password" required>
+      <input type="submit" name="" value="로그인">
+    <% end %>
+  </div>
+</div>

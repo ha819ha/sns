@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="All">
+    회원가입
+  </div>
+  <div class="contentbox">
+    <%= form_tag("/users", method: "post", class: "SignUp_form") do %>x
+      <input type="text" name="name" placeholder="ID" required>
+      <input type="text" name="password" placeholder="Password" required>
+      <input type="submit" name="" value="회원가입">
+    <% end %>
+  </div>
+</div>
